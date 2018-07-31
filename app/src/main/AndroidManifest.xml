@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cringe.timetable">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tuesday"
+            android:label="@string/title_activity_tuesday"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cringe.timetable.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Monday"
+            android:label="@string/title_activity_monday"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cringe.timetable.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Wednesday"
+            android:label="@string/title_activity_wednesday"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cringe.timetable.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Thursday"
+            android:label="@string/title_activity_thursday"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cringe.timetable.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Friday"
+            android:label="@string/title_activity_friday"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cringe.timetable.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
